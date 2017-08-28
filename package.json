@@ -4,7 +4,7 @@
   "description": "a whois client for node.js",
   "author": {
     "name": "Andreas Diem",
-    "email": "w4andy@andreas-diem.at"
+    "email": "develop+werist@andreas-diem.at"
   },
   "keywords": [
     "whois"
@@ -17,14 +17,14 @@
     "type": "git",
     "url": "git@github.com:w4andy/node-werist.git"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "changelog42": "0.9.0",
-    "eslint": "3.19.0",
-    "mocha": "3.2.0",
-    "nyc": "10.2.0",
-    "next-update": "1.5.1"
+    "eslint": "4.5.0",
+    "mocha": "3.5.0",
+    "nyc": "11.1.0",
+    "next-update": "3.5.3",
+    "mgl-validate": "2.1.0"
   },
   "main": "./lib",
   "scripts": {

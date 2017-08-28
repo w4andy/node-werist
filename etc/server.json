@@ -1,0 +1,209 @@
+{
+  "whois.cat": {
+    "charset": "utf-8",
+    "domainParameter": "-C UTF-8"
+  },
+  "whois.conac.cn": {
+    "charset": "utf-8"
+  },
+  "whois.corenic.net": {
+    "charset": "utf-8",
+    "domainParameter": "-C UTF-8"
+  },
+  "whois.online.rs.corenic.net": {
+    "charset": "utf-8",
+    "domainParameter": "-C UTF-8"
+  },
+  "whois.site.rs.corenic.net": {
+    "charset": "utf-8",
+    "domainParameter": "-C UTF-8"
+  },
+  "whois.lacnic.net": {
+    "charset": "iso-8859-1"
+  },
+  "whois.museum": {
+    "charset": "utf-8",
+    "domainParameter": "-C UTF-8"
+  },
+  "whois.aeda.net.ae": {
+    "charset": "utf-8"
+  },
+  "whois.nic.ar": {
+    "charset": "utf-8"
+  },
+  "whois.ax": {
+    "charset": "iso-8859-1"
+  },
+  "whois.registro.br": {
+    "charset": "iso-8859-1"
+  },
+  "whois.cira.ca": {
+    "charset": "iso-8859-1"
+  },
+  "whois.nic.ch": {
+    "charset": "utf-8"
+  },
+  "whois.nic.cl": {
+    "charset": "iso-8859-1"
+  },
+  "whois.cnnic.cn": {
+    "charset": "utf-8"
+  },
+  "cwhois.cnnic.cn": {
+    "charset": "utf-8"
+  },
+  "whois.nic.cz": {
+    "charset": "utf-8"
+  },
+  "whois.denic.de": {
+    "charset": "utf-8",
+    "domainParameter": "-T dn",
+    "punycode": false
+  },
+  "whois.enum.denic.de": {
+    "charset": "utf-8"
+  },
+  "whois.dk-hostmaster.dk": {
+    "charset": "utf-8",
+    "domainParameter": "--charset=utf-8 --show-handles"
+  },
+  "whois.tld.ee": {
+    "charset": "utf-8"
+  },
+  "whois.eu": {
+    "charset": "utf-8"
+  },
+  "whois.fi": {
+    "charset": "iso-8859-1"
+  },
+  "whois.nic.fo": {
+    "charset": "utf-8"
+  },
+  "whois.nic.fr": {
+    "charset": "utf-8"
+  },
+  "whois.hkirc.hk": {
+    "charset": "utf-8"
+  },
+  "whois.nic.hu": {
+    "charset": "iso-8859-1"
+  },
+  "whois.nic.ir": {
+    "charset": "utf-8"
+  },
+  "whois.isnic.is": {
+    "charset": "iso-8859-1"
+  },
+  "whois.nic.it": {
+    "charset": "utf-8"
+  },
+  "whois.jprs.jp": {
+    "charset": "iso-2022-jp",
+    "domainParameter": "$addr/e"
+  },
+  "whois.nic.ad.jp": {
+    "charset": "iso-2022-jp",
+    "domainParameter": "$addr/e"
+  },
+  "whois.domain.kg": {
+    "charset": "cp1251"
+  },
+  "whois.nic.or.kr": {
+    "charset": "utf-8"
+  },
+  "whois.kr": {
+    "charset": "utf-8"
+  },
+  "whois.nic.kz": {
+    "charset": "utf-8"
+  },
+  "whois.nic.li": {
+    "charset": "utf-8"
+  },
+  "whois.domreg.lt": {
+    "charset": "utf-8"
+  },
+  "whois.dns.lu": {
+    "charset": "iso-8859-1"
+  },
+  "whois.marnet.mk": {
+    "charset": "utf-8"
+  },
+  "whois.nic.mu": {
+    "charset": "utf-8"
+  },
+  "whois.norid.no": {
+    "charset": "iso-8859-1"
+  },
+  "whois.iis.nu": {
+    "charset": "utf-8"
+  },
+  "whois.registry.om": {
+    "charset": "utf-8"
+  },
+  "whois.registry.pf": {
+    "charset": "utf-8"
+  },
+  "whois.dns.pt": {
+    "charset": "iso-8859-1"
+  },
+  "whois.registry.qa": {
+    "charset": "utf-8"
+  },
+  "whois.nic.re": {
+    "charset": "utf-8"
+  },
+  "whois.rnids.rs": {
+    "charset": "utf-8"
+  },
+  "whois.nic.net.sa": {
+    "charset": "utf-8"
+  },
+  "whois.iis.se": {
+    "charset": "utf-8"
+  },
+  "whois.sgnic.sg": {
+    "charset": "utf-8"
+  },
+  "whois.tld.sy": {
+    "charset": "utf-8"
+  },
+  "whois.thnic.co.th": {
+    "charset": "utf-8"
+  },
+  "whois.ati.tn": {
+    "charset": "windows-1252"
+  },
+  "whois.nic.tr": {
+    "charset": "iso-8859-9"
+  },
+  "whois.twnic.net.tw": {
+    "charset": "utf-8"
+  },
+  "whois.biz.ua": {
+    "charset": "utf-8"
+  },
+  "whois.co.ua": {
+    "charset": "utf-8"
+  },
+  "whois.pp.ua": {
+    "charset": "utf-8"
+  },
+  "whois.ua": {
+    "charset": "utf-8"
+  },
+  "whois.nic.org.uy": {
+    "charset": "utf-8"
+  },
+  "whois.nic.wf": {
+    "charset": "utf-8"
+  },
+  "whois.nic.yt": {
+    "charset": "utf-8"
+  },
+  "whois.verisign-grs.com": {
+    "charset": "utf-8",
+    "domainParameter": "DOMAIN"
+  }
+
+}
