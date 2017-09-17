@@ -45,7 +45,7 @@ werist.lookup('google.com', function(err, data) {
 
 You may pass an object in between the address and the callback function to tweak the behavior of the lookup function:
 
-```json
+```js
 {
   "server": null,   // this can be a string ("host:port"); leaving it empty then werist chooses the server 
   "follow": 2,      // number of times to follow redirects
