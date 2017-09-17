@@ -1,4 +1,4 @@
-# node-whois
+# node-werist
 
 **_A whois client for node.js_**
 
@@ -13,6 +13,7 @@ _Wer ist are the German words for who is_
  - [ChangeLog](https://github.com/w4andy/node-werist/blob/master/CHANGELOG.markdown)
  - [License](https://github.com/w4andy/node-werist/blob/master/LICENSE)
  - [Usage](#usage)
+ - [Credit](#credit)
 
 ## Installation
 
@@ -55,5 +56,7 @@ You may pass an object in between the address and the callback function to tweak
 }
 ```
 
+## Credit
 
-Based on [rfc1036/whois](https://github.com/rfc1036/whois) and [FurqanSoftware/node-whois](https://github.com/FurqanSoftware/node-whois)
+
+node-werist is inspired by [rfc1036/whois](https://github.com/rfc1036/whois) and [FurqanSoftware/node-whois](https://github.com/FurqanSoftware/node-whois)
