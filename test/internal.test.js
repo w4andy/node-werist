@@ -29,12 +29,12 @@ suite('internal', function() {
     });
   });
 
-  test('google.net via whois.iana.org:43', (done) => {
-    werist.lookup('google.net', {server: 'whois.iana.org:43', verbose: true}, (err, data) => {
+  test('google.de via whois.iana.org:43', (done) => {
+    werist.lookup('google.de', {server: 'whois.iana.org:43', verbose: true}, (err, data) => {
       if (err) {
         return done(err);
       }
-      assert.strictEqual(data.length, 2);
+      assert.strictEqual(data.length, 1);
       assert.strictEqual(util.isObject(data[0].server), true);
       assert.notStrictEqual(data[0].server.host, 'whois.iana.org');
       done();
