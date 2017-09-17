@@ -1,29 +1,77 @@
 {
+  "whois.arin.net": {
+    "charset": "utf-8",
+    "query": "n + $addr\r\n"
+  },
+  "whois.ripe.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.apnic.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.afrinic.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "rr.arin.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.connect.com.au": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.restena.lu": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "rr.level3.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.ripn.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.arnes.si": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.ra.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.bgpmon.net": {
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
+  },
   "whois.cat": {
     "charset": "utf-8",
-    "domainParameter": "-C UTF-8"
+    "query": "-C UTF-8 $addr\r\n"
   },
   "whois.conac.cn": {
     "charset": "utf-8"
   },
   "whois.corenic.net": {
     "charset": "utf-8",
-    "domainParameter": "-C UTF-8"
+    "query": "-C UTF-8 $addr\r\n"
   },
   "whois.online.rs.corenic.net": {
     "charset": "utf-8",
-    "domainParameter": "-C UTF-8"
+    "query": "-C UTF-8 $addr\r\n"
   },
   "whois.site.rs.corenic.net": {
     "charset": "utf-8",
-    "domainParameter": "-C UTF-8"
+    "query": "-C UTF-8 $addr\r\n"
   },
   "whois.lacnic.net": {
     "charset": "iso-8859-1"
   },
   "whois.museum": {
     "charset": "utf-8",
-    "domainParameter": "-C UTF-8"
+    "query": "-C UTF-8 $addr\r\n"
   },
   "whois.aeda.net.ae": {
     "charset": "utf-8"
@@ -57,7 +105,7 @@
   },
   "whois.denic.de": {
     "charset": "utf-8",
-    "domainParameter": "-T dn",
+    "query": "-T dn $addr\r\n",
     "punycode": false
   },
   "whois.enum.denic.de": {
@@ -65,7 +113,7 @@
   },
   "whois.dk-hostmaster.dk": {
     "charset": "utf-8",
-    "domainParameter": "--charset=utf-8 --show-handles"
+    "query": "--charset=utf-8 --show-handles $addr\r\n"
   },
   "whois.tld.ee": {
     "charset": "utf-8"
@@ -80,7 +128,8 @@
     "charset": "utf-8"
   },
   "whois.nic.fr": {
-    "charset": "utf-8"
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
   },
   "whois.hkirc.hk": {
     "charset": "utf-8"
@@ -89,7 +138,8 @@
     "charset": "iso-8859-1"
   },
   "whois.nic.ir": {
-    "charset": "utf-8"
+    "charset": "utf-8",
+    "query": "-V Md5.2 $addr\r\n"
   },
   "whois.isnic.is": {
     "charset": "iso-8859-1"
@@ -99,11 +149,11 @@
   },
   "whois.jprs.jp": {
     "charset": "iso-2022-jp",
-    "domainParameter": "$addr/e"
+    "query": "$addr/e\r\n"
   },
   "whois.nic.ad.jp": {
     "charset": "iso-2022-jp",
-    "domainParameter": "$addr/e"
+    "query": "$addr/e\r\n"
   },
   "whois.domain.kg": {
     "charset": "cp1251"
@@ -203,7 +253,6 @@
   },
   "whois.verisign-grs.com": {
     "charset": "utf-8",
-    "domainParameter": "DOMAIN"
+    "query": "DOMAIN $addr\r\n"
   }
-
 }

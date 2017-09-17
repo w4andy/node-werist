@@ -1,6 +1,8 @@
-# [Node Werist](./README.markdown) ChangeLog
+# [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2017-09-17 node-werist, [v0.1.0](https://github.com/w4andy/node-werist/tree/v0.0.1)
 
+First release.
 
 ---
 

@@ -1,0 +1,130 @@
+[
+  {
+    "range": "2001:0000::/32",
+    "server": null
+  },
+  {
+    "range": "2001:0200::/23",
+    "server": "whois.apnic.net"
+  },
+  {
+    "range": "2001:0400::/23",
+    "server": "whois.arin.net"
+  },
+  {
+    "range": "2001:0600::/23",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:0800::/22",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:0C00::/22",
+    "server": "whois.apnic.net"
+  },
+  {
+    "range": "2001:1000::/22",
+    "server": "whois.lacnic.net"
+  },
+  {
+    "range": "2001:1400::/22",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:1800::/23",
+    "server": "whois.arin.net"
+  },
+  {
+    "range": "2001:1A00::/23",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:1C00::/22",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:2000::/19",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:4000::/23",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:4200::/23",
+    "server": "whois.afrinic.net"
+  },
+  {
+    "range": "2001:4400::/23",
+    "server": "whois.apnic.net"
+  },
+  {
+    "range": "2001:4600::/23",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:4800::/23",
+    "server": "whois.arin.net"
+  },
+  {
+    "range": "2001:4A00::/23",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:4C00::/22",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:5000::/20",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2001:8000::/18",
+    "server": "whois.apnic.net"
+  },
+  {
+    "range": "2002:0000::/16",
+    "server": null
+  },
+  {
+    "range": "2003:0000::/18",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2400:0000::/20",
+    "server": "whois.nic.or.kr"
+  },
+  {
+    "range": "2400:0000::/12",
+    "server": "whois.apnic.net"
+  },
+  {
+    "range": "2600:0000::/12",
+    "server": "whois.arin.net"
+  },
+  {
+    "range": "2610:0000::/23",
+    "server": "whois.arin.net"
+  },
+  {
+    "range": "2620:0000::/23",
+    "server": "whois.arin.net"
+  },
+  {
+    "range": "2800:0000::/12",
+    "server": "whois.lacnic.net"
+  },
+  {
+    "range": "2A00:0000::/12",
+    "server": "whois.ripe.net"
+  },
+  {
+    "range": "2C00:0000::/12",
+    "server": "whois.afrinic.net"
+  },
+  {
+    "range": "3FFE:0000::/16",
+    "server": "whois.6bone.net"
+  }
+]

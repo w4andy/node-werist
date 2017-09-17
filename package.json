@@ -1,6 +1,6 @@
 {
   "name": "node-werist",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "a whois client for node.js",
   "author": {
     "name": "Andreas Diem",
@@ -17,20 +17,22 @@
     "type": "git",
     "url": "git@github.com:w4andy/node-werist.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "iconv": "2.3.0",
+    "ip-address": "5.8.8",
+    "punycode": "2.1.0"
+  },
   "devDependencies": {
+    "ajv": "5.2.2",
     "changelog42": "0.9.0",
-    "eslint": "4.5.0",
-    "mocha": "3.5.0",
-    "nyc": "11.1.0",
-    "next-update": "3.5.3",
-    "mgl-validate": "2.1.0"
+    "eslint": "4.7.0",
+    "mocha": "3.5.3",
+    "nyc": "11.2.1"
   },
   "main": "./lib",
   "scripts": {
     "lint": "eslint ./",
     "test": "npm run lint && nyc --exclude=node_modules --exclude=test --reporter=lcov --reporter=text --reporter=text-summary --reporter=json-summary _mocha ./test/*.test.js",
-    "update": "next-update -k",
     "log": "changelog42 --no-author --commit-url=https://github.com/w4andy/node-werist/commit",
     "clean": "rm -rf node_modules/ && rm -rf coverage/ && rm -rf .nyc_output/ && rm -f npm-debug.log"
   }

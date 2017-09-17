@@ -2,77 +2,76 @@
 /* global suite: false, setup: false, test: false,
     teardown: false, suiteSetup: false, suiteTeardown: false */
 const assert = require('assert');
-const common = require('./common');
-const mglValidate = require('mgl-validate');
+const Ajv = require('ajv');
+const ajv = new Ajv();
 
 
 suite('config', function() {
-  let registry = new mglValidate({breakOnError: true});
-
-  suiteSetup((done) => {
-    registry.addSchema({
-      id: 'server.json',
-      type: 'object',
-      properties: {
-        '*': {
-          type: 'object',
-          properties: {
-            charset: {
-              type: 'string'
-            },
-            domainParameter: {
-              type: 'string',
-              optional: true
-            },
-            ipParameter: {
-              type: 'string',
-              optional: true
-            },
-            handleParameter: {
-              type: 'string',
-              optional: true
-            },
-            asParameter: {
-              type: 'string',
-              optional: true
-            },
-            punycode: {
-              type: 'boolean',
-              optional: true
-            },
-            port: {
-              type: 'number',
-              optional: true
-            }
-          }
-        }
-      }
-    });
-    registry.addSchema({
-      id: 'tld.json',
-      type: 'object',
-      properties: {
-        '*': {
-          type: 'string',
-          allowNullValue: true
-        }
-      }
-    });
-    done();
-  });
+  suiteSetup((done) => done());
   suiteTeardown((done) => done());
 
 
   test('server.json', () => {
     const serverJson = require('../etc/server.json');
-    const errors = registry.test('server.json', serverJson);
-    assert.strictEqual(errors, null);
+    assert.strictEqual(ajv.validate({
+      type: 'object',
+      patternProperties: {
+        '^[a-z\.]+$': {
+          type: 'object',
+          properties: {
+            charset: {type: 'string'},
+            query: {type: 'string'},
+            domainQuery: {type: 'string'},
+            ipQuery: {type: 'string'},
+            handleQuery: {type: 'string'},
+            asQuery: {type: 'string'},
+            punycode: {type: 'boolean'},
+            port: {type: 'number'}
+          },
+          required: ['charset']
+        }
+
+      }
+    }, serverJson), true);
   });
 
   test('tld.json', () => {
     const tldJson = require('../etc/tld.json');
-    const errors = registry.test('tld.json', tldJson);
-    assert.strictEqual(errors, null);
+    assert.strictEqual(ajv.validate({
+      type: 'object',
+      patternProperties: {
+        '^[a-z0-9\-]+$': {
+          type: ['string', 'null']
+        }
+      }
+    }, tldJson), true);
   });
 
+  test('ip_range.json', () => {
+    const ipRange = require('../etc/ip_range.json');
+    assert.strictEqual(ajv.validate({
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          range: {type: 'string'},
+          server: {type: ['string', 'null']}
+        }
+      }
+    }, ipRange), true);
+  });
+
+  test('ip6_range.json', () => {
+    const ipRange = require('../etc/ip6_range.json');
+    assert.strictEqual(ajv.validate({
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          range: {type: 'string'},
+          server: {type: ['string', 'null']}
+        }
+      }
+    }, ipRange), true);
+  });
 });
