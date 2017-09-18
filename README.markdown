@@ -18,7 +18,7 @@ _Wer ist are the German words for who is_
 ## Installation
 
 ```
-$ npm install werist
+$ npm install node-werist
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ $ npm install werist
 ### With Class
 
 ```js
-const Werist = require('werist').Werist;
+const Werist = require('node-werist').Werist;
 const werist = new Werist(); 
 werist.lookup('google.com', function(err, data) {
   console.log(data)
@@ -37,7 +37,7 @@ werist.lookup('google.com', function(err, data) {
 ### Without Class
 
 ```js
-const werist = require('werist')
+const werist = require('node-werist')
 werist.lookup('google.com', function(err, data) {
   console.log(data)
 })

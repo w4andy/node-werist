@@ -157,5 +157,19 @@ suite('ip address', function() {
       done();
     });
   });
+
+  test('connection refused ReferralServer', (done) => {
+    werist.lookup('209.91.128.30', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data[0].server.host, 'whois.arin.net');
+      assert.notStrictEqual(data[0].data.indexOf('NetRange:       209.91.128.0 - 209.91.191.255'), -1);
+      done();
+    });
+  });
+
 });
 
