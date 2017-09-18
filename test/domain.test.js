@@ -81,14 +81,4 @@ suite('domain', function() {
       done();
     });
   });
-
-  test('referral server with invalid host', (done) => {
-    werist.lookup('cwcom.net', (err, data) => {
-      if (err) {
-        return done(err);
-      }
-      assert.notStrictEqual(data.indexOf('Domain Name: CWCOM.NET'), -1);
-      done();
-    });
-  });
 });
