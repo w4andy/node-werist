@@ -22,7 +22,8 @@
     "iconv": "2.3.0",
     "ip-address": "5.8.8",
     "punycode": "2.1.0",
-    "tldjs": "2.2.0"
+    "tldjs": "2.2.0",
+    "socks": "1.1.10"
   },
   "devDependencies": {
     "ajv": "5.2.2",
