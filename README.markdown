@@ -52,7 +52,12 @@ You may pass an object in between the address and the callback function to tweak
   "follow": 2,      // number of times to follow redirects
   "timeout": 0,     // socket timeout, excluding this doesn't override any default timeout value
   "verbose": false, // setting this to true returns an array of responses from all servers
-  "bind": null      // bind the socket to a local IP address
+  "bind": null,     // bind the socket to a local IP address
+  "proxy": {        // Socks Proxy
+    "ipaddress": null,
+    "port": 0,
+    "type": 5       // or 4
+  }
 }
 ```
 
