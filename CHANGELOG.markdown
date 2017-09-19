@@ -1,5 +1,11 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2017-09-18 node-werist, [v0.2.1](https://github.com/w4andy/node-werist/tree/v0.2.1)
+
+### Commits
+
+  - [[`3eae8c4b3d`](https://github.com/w4andy/node-werist/commit/3eae8c4b3d7187bfae39bd93571acfedeab511c3)] - **lib**: better error handling
+
 ## 2017-09-18 node-werist, [v0.2.0](https://github.com/w4andy/node-werist/tree/v0.2.0)
 
 ### Notable Changes
