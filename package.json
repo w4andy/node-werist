@@ -29,7 +29,7 @@
   "devDependencies": {
     "ajv": "5.2.2",
     "changelog42": "0.9.0",
-    "eslint": "4.7.0",
+    "eslint": "4.7.2",
     "mocha": "3.5.3",
     "nyc": "11.2.1"
   },
