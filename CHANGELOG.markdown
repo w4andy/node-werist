@@ -1,5 +1,20 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+
+## 2017-09-21 node-werist, [v0.2.2](https://github.com/w4andy/node-werist/tree/v0.2.2)
+
+### Commits
+
+  - [[`be2d5098c8`](https://github.com/w4andy/node-werist/commit/be2d5098c8b5bd30bb2f724d56fb1a7a272bac33)] - **deps**: eslint v4.7.2
+  - [[`71b7f81560`](https://github.com/w4andy/node-werist/commit/71b7f8156021d5ad26a5df2f104c84eb1debd277)] - **etc**: update tld list
+  - [[`9de756648e`](https://github.com/w4andy/node-werist/commit/9de756648e54f9a0865a522bb1aa8f3050958c5b)] - **lib/werist**: fix find whois server via whois.iana.org
+  - [[`4e8c94e824`](https://github.com/w4andy/node-werist/commit/4e8c94e824d9ffd37ba53bcfc100fec21faf0200)] - **lib/werist**: check the whois.iana.org response if one object was found
+  - [[`2916c8ef1c`](https://github.com/w4andy/node-werist/commit/2916c8ef1cb6b798195cded3813671c30727a205)] - **lib/werist**: fix int domain lookup
+  - [[`ee2ea5bc51`](https://github.com/w4andy/node-werist/commit/ee2ea5bc5166adcc6fa302b0ddec7c2ced3eb445)] - **npm**: ignore IDE fiels
+  - [[`5dc2822fcd`](https://github.com/w4andy/node-werist/commit/5dc2822fcd9e0236b2596075d37c0e0b946a7bbc)] - **package**: add keywords
+  - [[`5b558aba0a`](https://github.com/w4andy/node-werist/commit/5b558aba0a105384067ce02df18dbb70dfd33326)] - rename package
+
+
 ## 2017-09-18 node-werist, [v0.2.1](https://github.com/w4andy/node-werist/tree/v0.2.1)
 
 ### Commits
