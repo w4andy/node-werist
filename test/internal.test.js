@@ -48,4 +48,14 @@ suite('internal', function() {
       done();
     });
   });
+
+  test('query invalid tld via whois.iana.org', (done) => {
+    werist.lookup('google.werist', {server: 'whois.iana.org', verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 0);
+      done();
+    });
+  });
 });
