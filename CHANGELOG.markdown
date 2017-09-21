@@ -10,7 +10,7 @@
   - [[`9de756648e`](https://github.com/w4andy/node-werist/commit/9de756648e54f9a0865a522bb1aa8f3050958c5b)] - **lib/werist**: fix find whois server via whois.iana.org
   - [[`4e8c94e824`](https://github.com/w4andy/node-werist/commit/4e8c94e824d9ffd37ba53bcfc100fec21faf0200)] - **lib/werist**: check the whois.iana.org response if one object was found
   - [[`2916c8ef1c`](https://github.com/w4andy/node-werist/commit/2916c8ef1cb6b798195cded3813671c30727a205)] - **lib/werist**: fix int domain lookup
-  - [[`ee2ea5bc51`](https://github.com/w4andy/node-werist/commit/ee2ea5bc5166adcc6fa302b0ddec7c2ced3eb445)] - **npm**: ignore IDE fiels
+  - [[`ee2ea5bc51`](https://github.com/w4andy/node-werist/commit/ee2ea5bc5166adcc6fa302b0ddec7c2ced3eb445)] - **npm**: ignore IDE files
   - [[`5dc2822fcd`](https://github.com/w4andy/node-werist/commit/5dc2822fcd9e0236b2596075d37c0e0b946a7bbc)] - **package**: add keywords
   - [[`5b558aba0a`](https://github.com/w4andy/node-werist/commit/5b558aba0a105384067ce02df18dbb70dfd33326)] - rename package
 
