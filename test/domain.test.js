@@ -81,4 +81,14 @@ suite('domain', function() {
       done();
     });
   });
+
+  test('nato.int', (done) => {
+    werist.lookup('nato.int', (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('organisation: north atlantic treaty organization'), -1);
+      done();
+    });
+  });
 });
