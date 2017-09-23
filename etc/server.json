@@ -250,9 +250,5 @@
   },
   "whois.nic.yt": {
     "charset": "utf-8"
-  },
-  "whois.verisign-grs.com": {
-    "charset": "utf-8",
-    "query": "DOMAIN $addr\r\n"
   }
 }
