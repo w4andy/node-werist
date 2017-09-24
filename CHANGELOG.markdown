@@ -1,6 +1,17 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
 
+## 2017-09-24 node-werist, [v0.2.3](https://github.com/w4andy/node-werist/tree/v0.2.3)
+
+### Commits
+
+  - [[`0fc94561ae`](https://github.com/w4andy/node-werist/commit/0fc94561aedf5b60a898d3671a05eb24a09b850f)] - **doc**: fix typo
+  - [[`e362b37463`](https://github.com/w4andy/node-werist/commit/e362b374634e4c6bd06f5de87142cba05a8f248a)] - **etc/server**: cleanup remove all server with default charset
+  - [[`f02fa69b0f`](https://github.com/w4andy/node-werist/commit/f02fa69b0fe82d147a5f1ea34dbe996a1152c4a0)] - **etc/server**: remove verisign-grs from the server config
+  - [[`8e2ba33301`](https://github.com/w4andy/node-werist/commit/8e2ba33301e80bdf8723c2bed94e67f9849b8ebc)] - **etc/tld**: update tld list
+  - [[`db8d592f69`](https://github.com/w4andy/node-werist/commit/db8d592f69f024d2166b1a18dd64bb920fb66aa6)] - **etc/tld**: remove dead whois server
+  - [[`1c2132ee0f`](https://github.com/w4andy/node-werist/commit/1c2132ee0f7642978b6f0772ca06105e3c9a7959)] - **etc/tld**: update tld server list
+
 ## 2017-09-21 node-werist, [v0.2.2](https://github.com/w4andy/node-werist/tree/v0.2.2)
 
 ### Commits
