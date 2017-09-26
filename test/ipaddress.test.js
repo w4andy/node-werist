@@ -5,7 +5,6 @@
 
 const assert = require('assert');
 const werist = require('../');
-const util = require('util');
 
 suite('ip address', function() {
   this.timeout(10000);
@@ -18,7 +17,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.afrinic.net');
       assert.notStrictEqual(data[0].data.indexOf('This is the AfriNIC Whois server'), -1);
       done();
@@ -31,7 +30,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.afrinic.net');
       assert.notStrictEqual(data[0].data.indexOf('This is the AfriNIC Whois server'), -1);
       done();
@@ -44,7 +43,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.apnic.net');
       assert.notStrictEqual(data[0].data.indexOf('[whois.apnic.net]'), -1);
       done();
@@ -57,7 +56,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.apnic.net');
       assert.notStrictEqual(data[0].data.indexOf('[whois.apnic.net]'), -1);
       done();
@@ -70,7 +69,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.lacnic.net');
       assert.notStrictEqual(data[0].data.indexOf('Joint Whois - whois.lacnic.net'), -1);
       done();
@@ -83,7 +82,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.lacnic.net');
       assert.notStrictEqual(data[0].data.indexOf('Joint Whois - whois.lacnic.net'), -1);
       done();
@@ -96,7 +95,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.ripe.net');
       assert.notStrictEqual(data[0].data.indexOf('This is the RIPE Database query service.'), -1);
       done();
@@ -109,7 +108,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.ripe.net');
       assert.notStrictEqual(data[0].data.indexOf('This is the RIPE Database query service.'), -1);
       done();
@@ -122,10 +121,10 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 2);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.arin.net');
       assert.notStrictEqual(data[0].data.indexOf('ARIN WHOIS data and services are subject'), -1);
-      assert.strictEqual(util.isObject(data[1].server), true);
+      assert.strictEqual(data && data[1] && data[1].server && typeof data[1].server === 'object', true);
       assert.strictEqual(data[1].server.host, 'rwhois.fdcservers.net');
       assert.notStrictEqual(data[1].data.indexOf('rwhois V-1.5:003fff:00 rwhois.fdcservers.net'), -1);
       done();
@@ -138,7 +137,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.arin.net');
       assert.notStrictEqual(data[0].data.indexOf('ARIN WHOIS data and services are subject'), -1);
       done();
@@ -151,7 +150,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.ripe.net');
       assert.notStrictEqual(data[0].data.indexOf('This is the RIPE Database query service.'), -1);
       done();
@@ -164,7 +163,7 @@ suite('ip address', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.arin.net');
       assert.notStrictEqual(data[0].data.indexOf('NetRange:       209.91.128.0 - 209.91.191.255'), -1);
       done();

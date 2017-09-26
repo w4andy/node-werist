@@ -5,7 +5,6 @@
 
 const assert = require('assert');
 const werist = require('../');
-const util = require('util');
 
 suite('internal', function() {
   this.timeout(10000);
@@ -23,7 +22,7 @@ suite('internal', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 2);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.notStrictEqual(data[0].server.host, 'whois.iana.org');
       done();
     });
@@ -35,7 +34,7 @@ suite('internal', function() {
         return done(err);
       }
       assert.strictEqual(data.length, 1);
-      assert.strictEqual(util.isObject(data[0].server), true);
+      assert.strictEqual(data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.notStrictEqual(data[0].server.host, 'whois.iana.org');
       done();
     });

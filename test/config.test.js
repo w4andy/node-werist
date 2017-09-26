@@ -16,7 +16,7 @@ suite('config', function() {
     assert.strictEqual(ajv.validate({
       type: 'object',
       patternProperties: {
-        '^[a-z\.]+$': {
+        '^[a-z.]+$': {
           type: 'object',
           properties: {
             charset: {type: 'string'},
@@ -40,7 +40,7 @@ suite('config', function() {
     assert.strictEqual(ajv.validate({
       type: 'object',
       patternProperties: {
-        '^[a-z0-9\-]+$': {
+        '^[a-z0-9-]+$': {
           type: ['string', 'null']
         }
       }

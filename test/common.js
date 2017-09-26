@@ -1,4 +1,4 @@
 'use strict';
 const path = require('path');
 
-exports.fixtures = path.resolve(__dirname, 'fixtures');
+module.exports.fixtures = path.resolve(__dirname, 'fixtures');

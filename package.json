@@ -30,10 +30,14 @@
     "ajv": "5.2.2",
     "changelog42": "0.9.0",
     "eslint": "4.7.2",
+    "eslint-plugin-node": "5.1.1",
     "mocha": "3.5.3",
     "nyc": "11.2.1"
   },
   "main": "./lib",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "scripts": {
     "lint": "eslint ./",
     "test": "npm run lint && nyc --exclude=node_modules --exclude=test --reporter=lcov --reporter=text --reporter=text-summary --reporter=json-summary _mocha ./test/*.test.js",
