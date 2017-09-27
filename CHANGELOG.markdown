@@ -1,5 +1,13 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2017-09-27 node-werist, [v0.2.4](https://github.com/w4andy/node-werist/tree/v0.2.4)
+
+### Commits
+
+  - [[`ef480e1837`](https://github.com/w4andy/node-werist/commit/ef480e1837b3f33e55f22ee3a81f0cd68e75787c)] - **etc/server**: sort list
+  - [[`b4ed866a7c`](https://github.com/w4andy/node-werist/commit/b4ed866a7c60aa556b261d05d5509a3ca621fc36)] - **lib**: deprecated functions removed
+  - [[`90be1da286`](https://github.com/w4andy/node-werist/commit/90be1da2866da6a4b5288d8840f347cda98121f1)] - **lib/werist**: fix find ReferralServer
+  - [[`77268a6ce3`](https://github.com/w4andy/node-werist/commit/77268a6ce34da670896dd5908afb76068f893a3f)] - **test**: fix .eslintrc format
 
 ## 2017-09-24 node-werist, [v0.2.3](https://github.com/w4andy/node-werist/tree/v0.2.3)
 

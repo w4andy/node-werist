@@ -1,6 +1,6 @@
 {
   "name": "werist",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "a whois client for node.js",
   "author": {
     "name": "Andreas Diem",
