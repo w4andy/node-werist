@@ -115,7 +115,20 @@ suite('ip address', function() {
     });
   });
 
-  test('ReferralServer check', (done) => {
+  test('IPv6 - IPv4-mapped addresses', (done) => {
+    werist.lookup('ffff::77.208.156.226', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+      assert.strictEqual(data[0].server.host, 'whois.ripe.net');
+      assert.notStrictEqual(data[0].data.indexOf('This is the RIPE Database query service.'), -1);
+      done();
+    });
+  });
+
+  test('ReferralServer - check', (done) => {
     werist.lookup('204.45.120.19', {verbose: true}, (err, data) => {
       if (err) {
         return done(err);
@@ -131,7 +144,7 @@ suite('ip address', function() {
     });
   });
 
-  test('not working ReferralServer', (done) => {
+  test('ReferralServer - not working', (done) => {
     werist.lookup('66.254.122.108', {verbose: true}, (err, data) => {
       if (err) {
         return done(err);
@@ -144,20 +157,7 @@ suite('ip address', function() {
     });
   });
 
-  test('IPv6 - IPv4-mapped addresses', (done) => {
-    werist.lookup('ffff::77.208.156.226', {verbose: true}, (err, data) => {
-      if (err) {
-        return done(err);
-      }
-      assert.strictEqual(data.length, 1);
-      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
-      assert.strictEqual(data[0].server.host, 'whois.ripe.net');
-      assert.notStrictEqual(data[0].data.indexOf('This is the RIPE Database query service.'), -1);
-      done();
-    });
-  });
-
-  test('connection refused ReferralServer', (done) => {
+  test('ReferralServer - connection refused', (done) => {
     werist.lookup('209.91.128.30', {verbose: true}, (err, data) => {
       if (err) {
         return done(err);
@@ -166,6 +166,19 @@ suite('ip address', function() {
       assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.arin.net');
       assert.notStrictEqual(data[0].data.indexOf('NetRange:       209.91.128.0 - 209.91.191.255'), -1);
+      done();
+    });
+  });
+
+  test('ReferralServer - comment: referralServer', (done) => {
+    werist.lookup('173.229.2.196', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+      assert.strictEqual(data[0].server.host, 'whois.arin.net');
+      assert.notStrictEqual(data[0].data.indexOf('NetRange:       173.229.0.0 - 173.229.31.255'), -1);
       done();
     });
   });
