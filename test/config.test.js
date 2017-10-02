@@ -19,7 +19,6 @@ suite('config', function() {
         '^[a-z.]+$': {
           type: 'object',
           properties: {
-            charset: {type: 'string'},
             query: {type: 'string'},
             domainQuery: {type: 'string'},
             ipQuery: {type: 'string'},
@@ -27,10 +26,8 @@ suite('config', function() {
             asQuery: {type: 'string'},
             punycode: {type: 'boolean'},
             port: {type: 'number'}
-          },
-          required: ['charset']
+          }
         }
-
       }
     }, serverJson), true);
   });

@@ -1,137 +1,72 @@
 {
   "rr.arin.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "rr.level3.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.afrinic.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.apnic.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.arin.net": {
-    "charset": "utf-8",
     "query": "n + $addr\r\n"
   },
   "whois.arnes.si": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
-  "whois.ati.tn": {
-    "charset": "windows-1252"
-  },
-  "whois.ax": {
-    "charset": "iso-8859-1"
-  },
   "whois.bgpmon.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.cat": {
-    "charset": "utf-8",
     "query": "-C UTF-8 $addr\r\n"
   },
-  "whois.cira.ca": {
-    "charset": "iso-8859-1"
-  },
   "whois.connect.com.au": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.corenic.net": {
-    "charset": "utf-8",
     "query": "-C UTF-8 $addr\r\n"
   },
   "whois.denic.de": {
-    "charset": "utf-8",
     "query": "-T dn $addr\r\n",
     "punycode": false
   },
   "whois.dk-hostmaster.dk": {
-    "charset": "utf-8",
     "query": "--charset=utf-8 --show-handles $addr\r\n"
   },
-  "whois.dns.lu": {
-    "charset": "iso-8859-1"
-  },
-  "whois.dns.pt": {
-    "charset": "iso-8859-1"
-  },
-  "whois.domain.kg": {
-    "charset": "cp1251"
-  },
-  "whois.fi": {
-    "charset": "iso-8859-1"
-  },
-  "whois.isnic.is": {
-    "charset": "iso-8859-1"
-  },
   "whois.jprs.jp": {
-    "charset": "iso-2022-jp",
     "query": "$addr/e\r\n"
   },
-  "whois.lacnic.net": {
-    "charset": "iso-8859-1"
-  },
   "whois.museum": {
-    "charset": "utf-8",
     "query": "-C UTF-8 $addr\r\n"
   },
   "whois.nic.ad.jp": {
-    "charset": "iso-2022-jp",
     "query": "$addr/e\r\n"
   },
-  "whois.nic.cl": {
-    "charset": "iso-8859-1"
-  },
   "whois.nic.fr": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
-  },
-  "whois.nic.hu": {
-    "charset": "iso-8859-1"
   },
   "whois.nic.ir": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
-  "whois.nic.tr": {
-    "charset": "iso-8859-9"
-  },
-  "whois.norid.no": {
-    "charset": "iso-8859-1"
-  },
   "whois.online.rs.corenic.net": {
-    "charset": "utf-8",
     "query": "-C UTF-8 $addr\r\n"
   },
   "whois.ra.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
-  "whois.registro.br": {
-    "charset": "iso-8859-1"
-  },
   "whois.restena.lu": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.ripe.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.ripn.net": {
-    "charset": "utf-8",
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.site.rs.corenic.net": {
-    "charset": "utf-8",
     "query": "-C UTF-8 $addr\r\n"
   }
 }

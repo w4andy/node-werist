@@ -72,6 +72,7 @@ suite('ip address', function() {
       assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.lacnic.net');
       assert.notStrictEqual(data[0].data.indexOf('Joint Whois - whois.lacnic.net'), -1);
+      assert.notStrictEqual(data[0].data.indexOf('Gerência Internet EMBRATEL'), -1);
       done();
     });
   });
@@ -85,6 +86,7 @@ suite('ip address', function() {
       assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.lacnic.net');
       assert.notStrictEqual(data[0].data.indexOf('Joint Whois - whois.lacnic.net'), -1);
+      assert.notStrictEqual(data[0].data.indexOf('Carlos M Martínez'), -1);
       done();
     });
   });
