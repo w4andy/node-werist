@@ -28,10 +28,10 @@
     "detect-character-encoding": "0.5.1"
   },
   "devDependencies": {
-    "ajv": "5.2.2",
+    "ajv": "5.2.3",
     "changelog42": "0.9.0",
-    "eslint": "4.7.2",
-    "eslint-plugin-node": "5.1.1",
+    "eslint": "4.8.0",
+    "eslint-plugin-node": "5.2.0",
     "mocha": "3.5.3",
     "nyc": "11.2.1"
   },
