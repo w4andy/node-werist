@@ -185,5 +185,19 @@ suite('ip address', function() {
     });
   });
 
+  // test('arin.net - No match found', (done) => {
+  //   werist.lookup('192.43.161.43', {verbose: true}, (err, data) => {
+  //     if (err) {
+  //       return done(err);
+  //     }
+  //     console.log(data);
+  //     assert.strictEqual(data.length, 1);
+  //     assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+  //     assert.strictEqual(data[0].server.host, 'whois.apnic.net');
+  //     assert.notStrictEqual(data[0].data.indexOf('Information related to \'192.0.0.0 - 192.255.255.255\''), -1);
+  //     done();
+  //   });
+  // });
+
 });
 
