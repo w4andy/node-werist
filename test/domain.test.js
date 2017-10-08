@@ -62,4 +62,24 @@ suite('domain', function() {
       done();
     });
   });
+
+  test('cme.coop - non existing Registrar WHOIS Server', (done) => {
+    werist.lookup('cme.coop', (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('registry registrant id: c18206788-cnic'), -1);
+      done();
+    });
+  });
+
+  test('pirelli.com - don\t follow the non verisign-grs.com whois server', (done) => {
+    werist.lookup('pirelli.com', (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('registrant organization: pirelli & c. s.p.a.'), -1);
+      done();
+    });
+  });
 });
