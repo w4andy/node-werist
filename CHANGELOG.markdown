@@ -1,5 +1,16 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2017-10-08 node-werist, [v0.3.0](https://github.com/w4andy/node-werist/tree/v0.3.0)
+
+### Commits
+
+  - [[`fda370ab20`](https://github.com/w4andy/node-werist/commit/fda370ab202e956ccf69c16f31fdebcb6be1a682)] - **deps**: mocha v4.0.1
+  - [[`57e4546cbc`](https://github.com/w4andy/node-werist/commit/57e4546cbc190f2c42c18bfcfd5a664050ff5b6c)] - **deps**: ajv v5.2.3, eslint v4.8.0, eslint-plugin-node v5.2.0
+  - [[`3ef717c7c6`](https://github.com/w4andy/node-werist/commit/3ef717c7c6c23c097b28e222445bbc08dbb73973)] - **lib/werist**: domain query follow only verisign-grs.com and iana.org server responses
+  - [[`54a948fbf2`](https://github.com/w4andy/node-werist/commit/54a948fbf2564541b9647045441378dcadbb5d1b)] - **lib/werist**: find the responsible whois server after reallocated the ip range
+  - [[`b675a00fc8`](https://github.com/w4andy/node-werist/commit/b675a00fc843afd1cec0b6ac811d207ab702dc6e)] - **lib/werist**: refactor the the request to use the context object
+  - [[`526bb40068`](https://github.com/w4andy/node-werist/commit/526bb4006884db8a4aed6591fc53a140de747c7c)] - **lib/werist**: add whois server charset detection
+
 ## 2017-09-27 node-werist, [v0.2.4](https://github.com/w4andy/node-werist/tree/v0.2.4)
 
 ### Commits
