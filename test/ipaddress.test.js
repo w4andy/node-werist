@@ -185,19 +185,85 @@ suite('ip address', function() {
     });
   });
 
-  // test('arin.net - No match found', (done) => {
-  //   werist.lookup('192.43.161.43', {verbose: true}, (err, data) => {
-  //     if (err) {
-  //       return done(err);
-  //     }
-  //     console.log(data);
-  //     assert.strictEqual(data.length, 1);
-  //     assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
-  //     assert.strictEqual(data[0].server.host, 'whois.apnic.net');
-  //     assert.notStrictEqual(data[0].data.indexOf('Information related to \'192.0.0.0 - 192.255.255.255\''), -1);
-  //     done();
-  //   });
-  // });
+  test('arin.net - No match found', (done) => {
+    werist.lookup('192.43.161.43', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+      assert.strictEqual(data[0].server.host, 'whois.apnic.net');
+      assert.notStrictEqual(data[0].data.indexOf('inetnum:        192.0.0.0 - 192.255.255.255'), -1);
+      done();
+    });
+  });
+
+  test('IP allocated to LACNIC - 1', (done) => {
+    werist.lookup('196.32.42.40', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(Array.isArray(data), true);
+      assert.strictEqual(data.length > 0, true);
+      const lastEntry = data.pop();
+      assert.strictEqual(lastEntry.server && typeof lastEntry.server === 'object', true);
+      assert.strictEqual(lastEntry.server.host, 'whois.lacnic.net');
+      assert.notStrictEqual(lastEntry.data.indexOf('inetnum:     196.32.32/19'), -1);
+      done();
+    });
+  });
+
+  test('IP allocated to LACNIC - 2', (done) => {
+    werist.lookup('196.40.22.203', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+      assert.strictEqual(data[0].server.host, 'whois.lacnic.net');
+      assert.notStrictEqual(data[0].data.indexOf('inetnum:     196.40.0/18'), -1);
+      done();
+    });
+  });
+
+  test('IP allocated to ARIN - 1', (done) => {
+    werist.lookup('200.62.10.31', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+      assert.strictEqual(data[0].server.host, 'whois.arin.net');
+      assert.notStrictEqual(data[0].data.indexOf('NetRange:       200.62.10.0 - 200.62.10.127'), -1);
+      done();
+    });
+  });
+
+  test('IP allocated to ARIN - 2', (done) => {
+    werist.lookup('196.12.161.11', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 1);
+      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+      assert.strictEqual(data[0].server.host, 'whois.arin.net');
+      assert.notStrictEqual(data[0].data.indexOf('NetRange:       196.12.161.0 - 196.12.161.255'), -1);
+      done();
+    });
+  });
+
+
+  test('IP allocated to APNIC', (done) => {
+    werist.lookup('203.69.29.91', {verbose: true}, (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data.length, 2);
+      assert.strictEqual(data && data[1] && data[1].server && typeof data[1].server === 'object', true);
+      assert.strictEqual(data[1].server.host, 'whois.apnic.net');
+      assert.notStrictEqual(data[1].data.indexOf('inetnum:        203.69.0.0 - 203.69.255.255'), -1);
+      done();
+    });
+  });
 
 });
-
