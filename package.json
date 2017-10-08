@@ -32,7 +32,7 @@
     "changelog42": "0.9.0",
     "eslint": "4.8.0",
     "eslint-plugin-node": "5.2.0",
-    "mocha": "3.5.3",
+    "mocha": "4.0.1",
     "nyc": "11.2.1"
   },
   "main": "./lib",
