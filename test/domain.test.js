@@ -82,4 +82,14 @@ suite('domain', function() {
       done();
     });
   });
+
+  test('altfyrieitt.fo - no response from server', (done) => {
+    werist.lookup('altfyrieitt.fo', (err, data) => {
+      if (err) {
+        return done(err);
+      }
+      assert.strictEqual(data, '');
+      done();
+    });
+  });
 });
