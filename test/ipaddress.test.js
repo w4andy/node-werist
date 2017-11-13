@@ -159,19 +159,6 @@ suite('ip address', function() {
     });
   });
 
-  test('ReferralServer - connection refused', (done) => {
-    werist.lookup('209.91.128.30', {verbose: true}, (err, data) => {
-      if (err) {
-        return done(err);
-      }
-      assert.strictEqual(data.length, 1);
-      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
-      assert.strictEqual(data[0].server.host, 'whois.arin.net');
-      assert.notStrictEqual(data[0].data.indexOf('NetRange:       209.91.128.0 - 209.91.191.255'), -1);
-      done();
-    });
-  });
-
   test('ReferralServer - comment: referralServer', (done) => {
     werist.lookup('173.229.2.196', {verbose: true}, (err, data) => {
       if (err) {
