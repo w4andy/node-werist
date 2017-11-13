@@ -1,5 +1,14 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2017-11-13 node-werist, [v0.3.1](https://github.com/w4andy/node-werist/tree/v0.3.1)
+
+### Commits
+
+  - [[`747b2c5a93`](https://github.com/w4andy/node-werist/commit/747b2c5a930fb6d4710e10164a64e059951f0282)] - **deps**: ajv v5.3.0, eslint v4.11.0, eslint-plugin-node v5.2.1, nyc, v11.3.0
+  - [[`401fcc66dc`](https://github.com/w4andy/node-werist/commit/401fcc66dc461168576a5f370665b2e036205b17)] - **lib/werist**: fix if the whois server response a empty body
+  - [[`405f2827cb`](https://github.com/w4andy/node-werist/commit/405f2827cb356110e550bb86af45f60c859bf184)] - **test**: add node.js v9 to .travis.yml
+  - [[`3ba1966d3b`](https://github.com/w4andy/node-werist/commit/3ba1966d3bc1f94a335e341d59f13739efca1b63)] - **test**: remove test for ip 209.91.128.30
+
 ## 2017-10-08 node-werist, [v0.3.0](https://github.com/w4andy/node-werist/tree/v0.3.0)
 
 ### Commits
