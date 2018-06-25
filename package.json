@@ -21,23 +21,23 @@
   },
   "dependencies": {
     "iconv": "2.3.0",
-    "ip-address": "5.8.8",
-    "punycode": "2.1.0",
-    "tldjs": "2.2.0",
-    "socks": "1.1.10",
-    "detect-character-encoding": "0.5.1"
+    "ip-address": "5.8.9",
+    "punycode": "2.1.1",
+    "tldjs": "2.3.1",
+    "socks": "2.2.0",
+    "detect-character-encoding": "0.6.0"
   },
   "devDependencies": {
-    "ajv": "5.3.0",
+    "ajv": "6.5.1",
     "changelog42": "0.9.0",
-    "eslint": "4.11.0",
-    "eslint-plugin-node": "5.2.1",
-    "mocha": "4.0.1",
-    "nyc": "11.3.0"
+    "eslint": "5.0.0",
+    "eslint-plugin-node": "6.0.1",
+    "mocha": "5.2.0",
+    "nyc": "12.0.2"
   },
   "main": "./lib",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
   "scripts": {
     "lint": "eslint ./",
