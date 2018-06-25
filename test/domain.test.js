@@ -47,8 +47,9 @@ suite('domain', function() {
       if (err) {
         return done(err);
       }
-      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('domain:.............google.tn'), -1);
-      assert.notStrictEqual(data.indexOf('ccTLD tn;تونس'), -1);
+
+      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('domain name.........: google.tn'), -1);
+      assert.notStrictEqual(data.indexOf('ccTLDs : .tn , .تونس'), -1);
       done();
     });
   });
@@ -68,7 +69,7 @@ suite('domain', function() {
       if (err) {
         return done(err);
       }
-      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('registry registrant id: c18206788-cnic'), -1);
+      assert.notStrictEqual(data.toLocaleLowerCase().indexOf('registry domain id: d7876879-cnic'), -1);
       done();
     });
   });
@@ -79,16 +80,6 @@ suite('domain', function() {
         return done(err);
       }
       assert.notStrictEqual(data.toLocaleLowerCase().indexOf('registrant organization: pirelli & c. s.p.a.'), -1);
-      done();
-    });
-  });
-
-  test('altfyrieitt.fo - no response from server', (done) => {
-    werist.lookup('altfyrieitt.fo', (err, data) => {
-      if (err) {
-        return done(err);
-      }
-      assert.strictEqual(data, '');
       done();
     });
   });

@@ -130,21 +130,21 @@ suite('ip address', function() {
     });
   });
 
-  test('ReferralServer - check', (done) => {
-    werist.lookup('204.45.120.19', {verbose: true}, (err, data) => {
-      if (err) {
-        return done(err);
-      }
-      assert.strictEqual(data.length, 2);
-      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
-      assert.strictEqual(data[0].server.host, 'whois.arin.net');
-      assert.notStrictEqual(data[0].data.indexOf('ARIN WHOIS data and services are subject'), -1);
-      assert.strictEqual(data && data[1] && data[1].server && typeof data[1].server === 'object', true);
-      assert.strictEqual(data[1].server.host, 'rwhois.fdcservers.net');
-      assert.notStrictEqual(data[1].data.indexOf('rwhois V-1.5:003fff:00 rwhois.fdcservers.net'), -1);
-      done();
-    });
-  });
+  // test('ReferralServer - check', (done) => {
+  //   werist.lookup('204.45.120.19', {verbose: true}, (err, data) => {
+  //     if (err) {
+  //       return done(err);
+  //     }
+  //     assert.strictEqual(data.length, 2);
+  //     assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
+  //     assert.strictEqual(data[0].server.host, 'whois.arin.net');
+  //     assert.notStrictEqual(data[0].data.indexOf('ARIN WHOIS data and services are subject'), -1);
+  //     assert.strictEqual(data && data[1] && data[1].server && typeof data[1].server === 'object', true);
+  //     assert.strictEqual(data[1].server.host, 'rwhois.fdcservers.net');
+  //     assert.notStrictEqual(data[1].data.indexOf('rwhois V-1.5:003fff:00 rwhois.fdcservers.net'), -1);
+  //     done();
+  //   });
+  // });
 
   test('ReferralServer - not working', (done) => {
     werist.lookup('66.254.122.108', {verbose: true}, (err, data) => {
@@ -221,7 +221,7 @@ suite('ip address', function() {
       assert.strictEqual(data.length, 1);
       assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
       assert.strictEqual(data[0].server.host, 'whois.arin.net');
-      assert.notStrictEqual(data[0].data.indexOf('NetRange:       200.62.10.0 - 200.62.10.127'), -1);
+      assert.notStrictEqual(data[0].data.indexOf('NetRange:       200.62.0.0 - 200.62.63.255'), -1);
       done();
     });
   });
