@@ -17,45 +17,94 @@
   "whois.arnes.si": {
     "query": "-V Md5.2 $addr\r\n"
   },
+  "whois.ati.tn": {
+    "charset": "windows-1252"
+  },
+  "whois.ax": {
+    "charset": "iso-8859-1"
+  },
   "whois.bgpmon.net": {
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.cat": {
-    "query": "-C UTF-8 $addr\r\n"
+    "query": "-C UTF-8 $addr\r\n",
+    "charset": "utf-8"
+  },
+  "whois.cira.ca": {
+    "charset": "iso-8859-1"
   },
   "whois.connect.com.au": {
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.corenic.net": {
-    "query": "-C UTF-8 $addr\r\n"
+    "query": "-C UTF-8 $addr\r\n",
+    "charset": "utf-8"
   },
   "whois.denic.de": {
     "query": "-T dn $addr\r\n",
     "punycode": false
   },
   "whois.dk-hostmaster.dk": {
-    "query": "--charset=utf-8 --show-handles $addr\r\n"
+    "query": "--charset=utf-8 --show-handles $addr\r\n",
+    "charset": "utf-8"
+  },
+  "whois.dns.lu": {
+    "charset": "iso-8859-1"
+  },
+  "whois.dns.pt": {
+    "charset": "iso-8859-1"
+  },
+  "whois.domain.kg": {
+    "charset": "cp1251"
+  },
+  "whois.fi": {
+    "charset": "iso-8859-1"
+  },
+  "whois.isnic.is": {
+    "charset": "iso-8859-1"
   },
   "whois.jprs.jp": {
-    "query": "$addr/e\r\n"
+    "query": "$addr/e\r\n",
+    "charset": "iso-2022-jp"
+  },
+  "whois.lacnic.net": {
+    "charset": "iso-8859-1"
   },
   "whois.museum": {
-    "query": "-C UTF-8 $addr\r\n"
+    "query": "-C UTF-8 $addr\r\n",
+    "charset": "utf-8"
   },
   "whois.nic.ad.jp": {
-    "query": "$addr/e\r\n"
+    "query": "$addr/e\r\n",
+    "charset": "iso-2022-jp"
+  },
+  "whois.nic.cl": {
+    "charset": "iso-8859-1"
   },
   "whois.nic.fr": {
     "query": "-V Md5.2 $addr\r\n"
   },
+  "whois.nic.hu": {
+    "charset": "iso-8859-1"
+  },
   "whois.nic.ir": {
     "query": "-V Md5.2 $addr\r\n"
   },
+  "whois.nic.tr": {
+    "charset": "iso-8859-9"
+  },
+  "whois.norid.no": {
+    "charset": "iso-8859-1"
+  },
   "whois.online.rs.corenic.net": {
-    "query": "-C UTF-8 $addr\r\n"
+    "query": "-C UTF-8 $addr\r\n",
+    "charset": "utf-8"
   },
   "whois.ra.net": {
     "query": "-V Md5.2 $addr\r\n"
+  },
+  "whois.registro.br": {
+    "charset": "iso-8859-1"
   },
   "whois.restena.lu": {
     "query": "-V Md5.2 $addr\r\n"
@@ -67,6 +116,7 @@
     "query": "-V Md5.2 $addr\r\n"
   },
   "whois.site.rs.corenic.net": {
-    "query": "-C UTF-8 $addr\r\n"
+    "query": "-C UTF-8 $addr\r\n",
+    "charset": "utf-8"
   }
 }

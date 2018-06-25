@@ -122,9 +122,5 @@
   {
     "range": "2C00:0000::/12",
     "server": "whois.afrinic.net"
-  },
-  {
-    "range": "3FFE:0000::/16",
-    "server": "whois.6bone.net"
   }
 ]
