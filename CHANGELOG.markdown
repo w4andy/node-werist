@@ -1,5 +1,15 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2018-07-04 node-werist, [v0.3.2](https://github.com/w4andy/node-werist/tree/v0.3.2)
+
+### Commits
+
+  - [[`6ba3ad2109`](https://github.com/w4andy/node-werist/commit/6ba3ad2109b35de175fbdb879d923f9b7ca6bfa0)] - **deps**: ip-address v5.8.9, punycode v2.1.1, tldjs v2.3.1, socks v2.2.0, detect-character-encoding v0.6.0, ajv v6.5.1, eslint v5.0.0, eslint-plugin-node v6.0.1, mocha v5.2.0, nyc v12.0.2
+  - [[`697e249747`](https://github.com/w4andy/node-werist/commit/697e2497474c404e0bd16676f8ec7ebcae24d00d)] - **etc**: update server charset and update tld server
+  - [[`07f9011aec`](https://github.com/w4andy/node-werist/commit/07f9011aecdd414a787057d52327a1e0d225ffc6)] - **test**: fix tests
+  - [[`25ea57f6b5`](https://github.com/w4andy/node-werist/commit/25ea57f6b53d75c5c0e0f757ba4d09ef29e04b02)] - **test**: update eslint config
+  - [[`dbb3c1e249`](https://github.com/w4andy/node-werist/commit/dbb3c1e249061f660cd930a9943db35cc1925c0b)] - **travis.yml**: update node.js versions
+
 ## 2017-11-13 node-werist, [v0.3.1](https://github.com/w4andy/node-werist/tree/v0.3.1)
 
 ### Commits
