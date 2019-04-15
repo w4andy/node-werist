@@ -84,19 +84,8 @@
         "ignoreGlobalItems": []
       }
     ],
-    "node/no-extraneous-require": [
-      "error",
-      {
-        "allowModules": []
-      }
-    ],
-    "node/no-unpublished-require": [
-      "error",
-      {
-        "allowModules": ["ajv"]
-
-      }
-    ]
+    "node/no-extraneous-require":  "error",
+    "node/no-unpublished-require": "error"
   },
   "plugins": [ "node" ],
   "extends": ["eslint:recommended", "plugin:node/recommended"],
