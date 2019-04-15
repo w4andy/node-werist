@@ -1,5 +1,16 @@
 # [node-werist](https://github.com/w4andy/node-werist/blob/master/README.markdown) ChangeLog
 
+## 2019-04-15 node-werist, [v0.3.3](https://github.com/w4andy/node-werist/tree/v0.3.3)
+
+### Commits
+
+  - [[`94e0e31bd7`](https://github.com/w4andy/node-werist/commit/94e0e31bd70c981f60209f7df026186e75f15658)] - **deps**: iconv v2.3.4, ip-address v5.9.0, socks v2.3.2, detect-character-encoding v0.7.0, ajv v6.10.0, eslint v5.16.0, eslint-plugin-node v8.0.1, mocha v6.1.3, nyc v13.3.0
+  - [[`6ba3ad2109`](https://github.com/w4andy/node-werist/commit/6ba3ad2109b35de175fbdb879d923f9b7ca6bfa0)] - **deps**: ip-address v5.8.9, punycode v2.1.1, tldjs v2.3.1, socks v2.2.0, detect-character-encoding v0.6.0, ajv v6.5.1, eslint v5.0.0, eslint-plugin-node v6.0.1, mocha v5.2.0, nyc v12.0.2
+  - [[`be980f72ae`](https://github.com/w4andy/node-werist/commit/be980f72ae5496c252b904df680023a772e02582)] - **etc**: update tld server
+  - [[`697e249747`](https://github.com/w4andy/node-werist/commit/697e2497474c404e0bd16676f8ec7ebcae24d00d)] - **etc**: update server charset and update tld server
+  - [[`07f9011aec`](https://github.com/w4andy/node-werist/commit/07f9011aecdd414a787057d52327a1e0d225ffc6)] - **test**: fix tests
+  - [[`8b7b106f18`](https://github.com/w4andy/node-werist/commit/8b7b106f18b94c875f8145a7486f1b4542970048)] - **tests**: update eslint config
+
 ## 2018-07-04 node-werist, [v0.3.2](https://github.com/w4andy/node-werist/tree/v0.3.2)
 
 ### Commits
