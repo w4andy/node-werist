@@ -205,10 +205,11 @@ suite('ip address', function() {
       if (err) {
         return done(err);
       }
-      assert.strictEqual(data.length, 1);
-      assert.strictEqual(data && data[0] && data[0].server && typeof data[0].server === 'object', true);
-      assert.strictEqual(data[0].server.host, 'whois.lacnic.net');
-      assert.notStrictEqual(data[0].data.indexOf('inetnum:     196.40.0/18'), -1);
+
+      const idx = data.length - 1;
+      assert.strictEqual(data && data[idx] && data[idx].server && typeof data[idx].server === 'object', true);
+      assert.strictEqual(data[idx].server.host, 'whois.lacnic.net');
+      assert.notStrictEqual(data[idx].data.indexOf('inetnum:     196.40.0/18'), -1);
       done();
     });
   });
