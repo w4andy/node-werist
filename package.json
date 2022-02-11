@@ -28,7 +28,7 @@
     "detect-character-encoding": "0.8.0"
   },
   "devDependencies": {
-    "ajv": "6.10.1",
+    "ajv": "6.12.3",
     "changelog42": "0.9.0",
     "eslint": "5.16.0",
     "eslint-plugin-node": "9.1.0",
